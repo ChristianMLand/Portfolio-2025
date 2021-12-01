@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <header>
+        <nav>
+            <ul>
+                <li><a class="active" href="#body">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="home" class="angle-left">
+            <section>
+                <h1>Hi, I'm Chris.</h1>
+                <p>I'm a <span>full stack</span> developer in the Seattle/Tacoma area.</p>
+                <div class="arrow"></div>
+            </section>
+        </div>
+        <div id="about">
+            <h1>About</h1>
+            <p>Hi, I’m Chris! My two greatest passions are design and problem solving, so web development always felt like a perfect fit for me. I’ve been dabbling in web development for over 10 years at this point, however it was only recently that I felt confident I could actually make this my career. I love learning new technologies and am always striving to improve myself and take my skills to the next level!</p>
+            <div id="meters">
+                <label for="html">HTML/CSS</label>
+                <meter id="html" value="0.95">95%</meter>
+                <label for="js">Javascript</label>
+                <meter id="js" value="0.85">85%</meter>
+                <label for="js">Python</label>
+                <meter id="js" value="0.95">95%</meter>
+                <label for="js">C#</label>
+                <meter id="js" value="0.7">70%</meter>
+                <label for="js">Java</label>
+                <meter id="js" value="0.55">55%</meter>
+                <label for="js">SQL</label>
+                <meter id="js" value="0.60">60%</meter>
+            </div>
+        </div>
+        <div id="projects" class="angle-left">
+            <h1>Projects</h1>
+            <div id="project-cards">
+                <div class="card">
+                    <div class="card-head"></div>
+                    <div class="card-body">
+                        <h3>Tazkr</h3>
+                        <p>Project organization tool</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <h1>Contact Me</h1>
+            <form action="#">
+                <input type="email" placeholder="Email" name="email">
+                <input type="text" placeholder="Subject" name="subject">
+                <textarea placeholder="Message..." name="" id="" cols="30" rows="10"></textarea>
+                <button>Contact</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

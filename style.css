@@ -53,23 +53,38 @@ span {
 main {
     text-align: center;
     height: 100%;
-    margin-bottom: 500px;
+    background: linear-gradient(180deg, white 50%, var(--bg) 50%);
 }
 header {
     position: -webkit-sticky;
     position: sticky;
+    z-index: 100;
     top: 0;
     background: var(--bg);
 }
+footer {
+    background: var(--bg);
+    padding: 3rem;
+    color: var(--light) !important;
+}
 .angle-left {
     position: relative;
-    z-index: -1;
     clip-path: polygon(
         0 0,
         100% 0,
-        100% calc(100% - 6vw),
+        100% calc(100% - 6vh),
         0 100%
     );
+}
+.angle-right{
+    position: relative;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 6vh)
+    );
+    z-index: 20;
 }
 #home {
     height: 110vh;
@@ -147,6 +162,8 @@ meter::-webkit-meter-optimum-value, meter::-moz-meter-bar {
     min-height: 90vh;
     width: 100%;
     padding: 2rem;
+    padding-bottom: 10vh;
+    background: white;
 }
 #projects * {
     color: var(--bg);
@@ -169,6 +186,7 @@ meter::-webkit-meter-optimum-value, meter::-moz-meter-bar {
     display: flex;
     flex-direction: column;
     width: 32rem;
+    background: white;
 }
 .card-head {
     background: var(--light);
@@ -203,10 +221,19 @@ meter::-webkit-meter-optimum-value, meter::-moz-meter-bar {
 }
 #contact {
     color: black;
-    /* background: blue */
+    padding: 2rem;
+    background: var(--bg);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#contact h1 {
+    font-size: 48px;
 }
 #contact * {
-    color: black
+    color: white;
+    
 }
 form {
     display: flex;
@@ -217,6 +244,7 @@ form {
     background: var(--bg);
     gap: 10px;
     border-radius: 5px;
+    box-shadow: 0 10px 60px -20px black;
 }
 input, textarea {
     color: #94A3B9 !important;
@@ -235,6 +263,9 @@ form button {
     border: none;
     color: white !important;
 }
+.disabled {
+    opacity: 0.4;
+}
 @media screen and (max-width: 600px) {
     :root {
         font-size: 10px;
@@ -246,7 +277,6 @@ form button {
         grid-column: 1;
         grid-row: 1;
         font-weight: 400;
-        font-size: 38px;
     }
     #about p {
         grid-row: 2;
@@ -259,7 +289,7 @@ form button {
         width: 100%;
     }
     /* TODO nav hamburger menu */
-    #projects h1 {
+    #projects h1, #about h1, #contact h1 {
         font-size: 38px;
     }
 }

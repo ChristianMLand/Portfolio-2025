@@ -66,6 +66,10 @@ footer {
     background: var(--bg);
     padding: 3rem;
     color: var(--light) !important;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    cursor: pointer;
 }
 .angle-left {
     position: relative;
@@ -258,13 +262,26 @@ input, textarea {
 }
 form button {
     background: var(--secondary);
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 1.5rem;
     border: none;
     color: white !important;
+    cursor: pointer;
 }
 .disabled {
     opacity: 0.4;
+}
+#icons {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.icon {
+    height: 3rem;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 50%;
+    filter: invert(1);
 }
 @media screen and (max-width: 600px) {
     :root {

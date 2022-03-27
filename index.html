@@ -28,8 +28,12 @@
         </div>
         <div id="about">
             <h1>About</h1>
-            <p>Hi, I’m Chris! My two greatest passions are design and problem solving, so web development always felt like a perfect fit for me. I’ve been dabbling in web development for over 10 years at this point, however it was only recently that I felt confident I could actually make this my career. I love learning new technologies and am always striving to improve myself and take my skills to the next level!</p>
+            <div id="bio">
+                <h2>Who am I?</h2>
+                <p>Hi, I’m Chris! My two greatest passions are design and problem solving, so coding always felt like a perfect fit for me. I’ve been dabbling in web development for over 10 years at this point, however it was only within the last few years that I felt confident I could actually make this my career. I love learning new technologies, and I am always striving to improve myself and take my skills to the next level!</p>
+            </div>
             <div id="meters">
+                <h2>Language Proficiency</h2>
                 <label for="html">HTML/CSS</label>
                 <meter id="html" value="0.95">95%</meter>
                 <label for="js">Javascript</label>
@@ -37,21 +41,55 @@
                 <label for="js">Python</label>
                 <meter id="js" value="0.95">95%</meter>
                 <label for="js">C#</label>
-                <meter id="js" value="0.7">70%</meter>
-                <label for="js">Java</label>
-                <meter id="js" value="0.55">55%</meter>
-                <label for="js">SQL</label>
                 <meter id="js" value="0.60">60%</meter>
+                <label for="js">Java</label>
+                <meter id="js" value="0.65">65%</meter>
+                <label for="js">SQL</label>
+                <meter id="js" value="0.75">75%</meter>
+                <label for="rust">Rust</label>
+                <meter id="rust" value="0.40">40%</meter>
             </div>
         </div>
-        <div id="projects" class="angle-left">
+        <div id="projects">
             <h1>Projects</h1>
             <div id="project-cards">
                 <div class="card">
-                    <div class="card-head"></div>
+                    <div class="card-head">
+                        <img src="./img/tazkr_crop.png" alt="tazkr">
+                    </div>
                     <div class="card-body">
                         <h3>Tazkr</h3>
-                        <p>Project organization tool</p>
+                        <p>Project organization board with real time updating via websockets, and the ability to generate a link to your specific board in order to share it with others</p>
+                    </div>
+                    <div class="card-foot">
+                        <a href="https://christianmland.github.io/poke_guess/">View</a>
+                        <a href="https://github.com/ChristianMLand/Tazkr-Flask-React">Code</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./img/wtpg_crop.png" alt="who's that pokemon?">
+                    </div>
+                    <div class="card-body">
+                        <h3>Who's That Pokemon?</h3>
+                        <p>Game that picks random Pokemon using PokeAPI and blocks out their silhouette for players to try and guess.</p>
+                    </div>
+                    <div class="card-foot">
+                        <a href="https://christianmland.github.io/poke_guess/">View</a>
+                        <a href="https://github.com/ChristianMLand/poke_guess">Code</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="#" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3>Todo</h3>
+                        <p>This is filler text until I have screenshots prepared for this section</p>
+                    </div>
+                    <div class="card-foot">
+                        <a href="">View</a>
+                        <a href="">Code</a>
                     </div>
                 </div>
             </div>

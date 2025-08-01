@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Land Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <header>
+        <nav>
+            <ul>
+                <li><a class="active" href="#body">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="home" class="angle-left">
+            <section>
+                <h1>Hi, I'm Chris.</h1>
+                <p>I'm a <span>full stack</span> developer in the Seattle/Tacoma area.</p>
+                <div class="arrow"></div>
+            </section>
+        </div>
+        <div id="about">
+            <h1>About</h1>
+            <div id="bio">
+                <h2>Who am I?</h2>
+                <p>Hi, I’m Chris! My two greatest passions are design and problem solving, so coding always felt like a perfect fit for me. I’ve been dabbling in web development for over 10 years at this point, however it was only within the last few years that I felt confident I could actually make this my career. I love learning new technologies, and I am always striving to improve myself and take my skills to the next level!</p>
+            </div>
+            <div id="meters">
+                <h2>Language Proficiency</h2>
+                <label for="html">HTML/CSS</label>
+                <meter id="html" value="0.95">95%</meter>
+                <label for="js">Javascript</label>
+                <meter id="js" value="0.85">85%</meter>
+                <label for="js">Python</label>
+                <meter id="js" value="0.95">95%</meter>
+                <label for="js">C#</label>
+                <meter id="js" value="0.60">60%</meter>
+                <label for="js">Java</label>
+                <meter id="js" value="0.65">65%</meter>
+                <label for="js">SQL</label>
+                <meter id="js" value="0.75">75%</meter>
+                <label for="rust">Rust</label>
+                <meter id="rust" value="0.40">40%</meter>
+            </div>
+        </div>
+        <div id="projects" class="angle-right">
+            <h1>Projects</h1>
+            <div id="project-cards">
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./img/terminal.png" alt="terminal-archive">
+                    </div>
+                    <div class="card-body">
+                        <h3>Terminal Archive</h3>
+                        <p>Internal website developed for Odyssey Logistics used to filter and view container availability data scraped from various sources.</p>
+                    </div>
+                    <div class="card-foot">
+                        <a href="http://terminalmt.shipglobal.com/">View</a>
+                        <a href="https://github.com/ChristianMLand/terminal-archive">Code</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./img/tazkr_crop.png" alt="tazkr">
+                    </div>
+                    <div class="card-body">
+                        <h3>Tazkr</h3>
+                        <p>Project organization board with real time updating via websockets, and the ability to generate a link to your specific board in order to share it with others</p>
+                    </div>
+                    <div class="card-foot">
+                        <a class="disabled">View</a>
+                        <a href="https://github.com/ChristianMLand/Tazkr-Flask-React">Code</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-head">
+                        <img src="./img/wtpg_crop.png" alt="who's that pokemon?">
+                    </div>
+                    <div class="card-body">
+                        <h3>Who's That Pokemon?</h3>
+                        <p>Game that picks random Pokemon using PokeAPI and blocks out their silhouette for players to try and guess.</p>
+                    </div>
+                    <div class="card-foot">
+                        <a href="https://christianmland.github.io/poke_guess/">View</a>
+                        <a href="https://github.com/ChristianMLand/poke_guess">Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact" >
+            <h1>Contact Me</h1>
+            <form action="#contact">
+                <!-- <input type="email" placeholder="Email" name="email"> -->
+                <input type="text" placeholder="Subject" name="subject">
+                <textarea placeholder="Message..." name="" id="" cols="30" rows="10"></textarea>
+                <button>Contact</button>
+            </form>
+            <footer>
+                <div id="icons">
+                    <img class="icon" src="img/107159_circle_linkedin_icon.svg" alt="linkedin" onclick="location.href='https://www.linkedin.com/in/christian-l-5b77011b1/'">
+                    <img class="icon" src="img/298822_github_mark_icon.svg" alt="github" onclick="location.href='https://github.com/ChristianMLand'">
+                </div>
+                © Copyright Christian Land 2021. All Rights Reserved 
+            </footer>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
